@@ -42,6 +42,19 @@ else{
 }
 
 })
+// display modal
+const links = document.querySelectorAll('.work-item_icon');
+
+
+links.forEach(function(item){
+    item.addEventListener('click',function(event){
+        ui.showModal(event)
+    })
+})
+
+
+
+
 }
 
 
@@ -125,7 +138,7 @@ UI.prototype.clearFields = function(){
      document.querySelector('.input-lastname').value = '';
      document.querySelector('.input-email').value = '';
 }
-
+//
 
 
 
