@@ -138,8 +138,21 @@ UI.prototype.clearFields = function(){
      document.querySelector('.input-lastname').value = '';
      document.querySelector('.input-email').value = '';
 }
-//
+// show model
 
+UI.prototype.showModal = function(event){
+    event.preventDefault();
+    if(event.target.parentElement.classList.contains('work-item_icon')){
+        let id = event.target.parentElement.dataset.id
+        
+        const modal = document.querySelector('.work-modal');
+        const modalItem = document.querySelector('.work-modal_item');
+
+        modal.classList.add('work-modal--show');
+        modalItem.style.backgroundImage = `url(img/work- ${id}.jpeg)`
+    };
+
+}
 
 
 
