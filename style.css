@@ -467,4 +467,13 @@ body{
     position: fixed;
     font-size: 3rem;
     color: var(--brightYellow);
+    bottom: 5%;
+    right: 5%;
+    transition: color 0.5s linear;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.work-modal_close:hover{
+    color: red;
 }
