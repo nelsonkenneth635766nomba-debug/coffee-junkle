@@ -464,5 +464,7 @@ body{
     width: 80vw;
 }
 .work-modal_close{
-    
+    position: fixed;
+    font-size: 3rem;
+    color: var(--brightYellow);
 }
