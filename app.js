@@ -51,7 +51,10 @@ links.forEach(function(item){
         ui.showModal(event)
     })
 })
-
+//hide modal
+document.querySelector('.work-modal_close').addEventListener('click',function(){
+    ui.closeModal()
+})
 
 
 
@@ -149,15 +152,20 @@ UI.prototype.showModal = function(event){
         const modalItem = document.querySelector('.work-modal_item');
 
         modal.classList.add('work-modal--show');
-        modalItem.style.backgroundImage = `url(img/work- ${id}.jpeg)`
+        modalItem.style.backgroundImage = `url(img/work-${id}.jpeg)`
     };
 
+}
+// hide modal
+
+UI.prototype.closeModal = function(){
+    document.querySelector('.work-modal').classList.remove('work-modal--show')
 }
 
 
 
 
-
+// customer
 function Customer(name, lastname, email) {
     this.name = name,
     this.lastname = lastname,
