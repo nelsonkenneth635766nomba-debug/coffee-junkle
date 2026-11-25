@@ -446,7 +446,12 @@ body{
 
 }
 /* modal */
+
 .work-modal{
+    display: none;
+}
+
+.work-modal--show{
     position: fixed;
     background: rgba(0,0,0,0.5);
     top: 0;
@@ -462,6 +467,14 @@ body{
     background: url('../img/work-1.jpeg')center/cover;
     height: 70vh;
     width: 80vw;
+    border: 0.5rem solid var(--yellow);
+    border-radius: 0.4rem;
+}
+@media screen and (min-width:768px){
+    .work-modal_item{
+        height: 80vh;
+        width: 60vw;
+    }
 }
 .work-modal_close{
     position: fixed;
